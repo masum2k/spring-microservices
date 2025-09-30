@@ -31,6 +31,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<String> createUser(@RequestBody UserRequest userRequest) {
         userService.addUser(userRequest);
+        //
         return ResponseEntity.ok("User added successfully");
     }
 
